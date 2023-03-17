@@ -13,14 +13,9 @@ export const pathList = [
 
 export const netlifyBasePathList: Path[] = [
     {
-        folder: "base",
-        view: "/welcome",
+        folder: "portfolio",
+        view: "/portfolio-home",
         path: "index.html"
-    },
-    {
-        folder: "base",
-        view: "/welcome",
-        path: "welcome.html"
     },
     {
         folder: "base",
