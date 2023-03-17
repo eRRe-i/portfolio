@@ -14,16 +14,10 @@ edge.mount(join(__dirname, 'views'))
 
 app.use(express.static(join(__dirname, '')))
 
-app.get(['/', '/welcome'], async (req: Request, res: Response) => {
-    const data = await edge.render('base/welcome', {
-        pathList: pathList
-    })
-    res.send(data)
-})
-app.get('/test-user', async (req: Request, res: Response) => {
-    const data = await edge.render('alumni/test-user', {
-        loggedUser: loggedUser
-    })
+console.log(__dirname)
+
+app.get(['/', '/home'], async (req: Request, res: Response) => {
+    const data = await edge.render('portfolio/portfolio-home')
     res.send(data)
 })
 app.get('*', async (req: Request, res: Response) => {
