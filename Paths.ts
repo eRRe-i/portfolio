@@ -6,8 +6,8 @@ interface Path {
 
 export const pathList = [
     {
-        folder: "alumni",
-        view: "/test-user"
+        folder: "portfolio",
+        view: "/portfolio-home"
     }
 ]
 
